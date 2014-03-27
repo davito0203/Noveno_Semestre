@@ -1,0 +1,78 @@
+\documentclass[xcolor=svgnames]{beamer}
+\usepackage[utf8x]{inputenc}
+%\usepackage[spanish]{babel}
+\usepackage{times}
+\usepackage{cite}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{alltt}
+\usepackage{amsthm}
+\usepackage{color}
+\usepackage{CJK}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{textpos}
+\usepackage{fancybox}
+\usepackage{eurosym}
+%\usepackage{amssymb,amsfonts}
+%\usepackage{pict2e}
+%\usepackage{float}
+%\usepackage{graphics,graphicx,color,colortbl}
+%\usepackage{algorithm}
+\usepackage{graphics,graphicx,color,colortbl}
+\usepackage{subfigure}
+\usepackage{algorithm}
+
+
+\usetheme{Berlin}
+\useoutertheme{shadow}
+\useoutertheme{split}
+\useinnertheme{rounded}
+\useoutertheme{infolines}
+\usecolortheme{orchid}
+\usecolortheme{whale}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{bgcolor}{fg=black,bg=GhostWhite}
+\setbeamercovered{transparent}
+
+\title{Volcanic Environments}
+\subtitle{Robots for Exploration and Measurement}
+\author[David Martínez y Luis Melo]{David Ricardo Martínez Hernández \\ Luis Aníbal Melo Rivera}
+\institute[UNAL]{Faculty Engineer\\ Department Electric and Electronic \\ National University Of Colombia}
+\date[08/27/2012]{August $27$, $2012$}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+\begin{frame}
+ \section{Introduction}
+\end{frame}
+\begin{frame}
+ \section{Importance of Robots For Measurement in Volcanoes}
+
+ The study of volcanic activity is important from a scientific point of view as it allows for a better understanding of one of the most spectacular geological phenomena and of the working principles that are at the basis of geophysics. Furthermore, there are numerous events that directly result from volcanic eruptions and that effect many populations.\\
+%Therefore, improving the prediction methods of eruptive phenomena would be of great benefit. There are more than 1,500 potentially active volcanoes in the world, and roughly $10 \%$ of the world’s population live in areas directly threatened by volcanoes. In all of these areas, volcanoes have a strong influence on many day-to-day activities. The eruption of Eyjafjallajokull in Iceland in April 2010 caused the cancellation of more than 100,000 European flights and, consequently, left more than 10 million passengers stranded.
+%Each year, on a graver note, many regions in the world are destroyed or heavily damaged by lava or heavily damaged by lava or flows, in some cases, resulting in numbers of casualties that could have been avoided with the improvement of early warning systems.
+%Most of the measurements necessary for a comprehensive analysis of what is taking place inside a volcano should be taken in the proximity of the craters. Moreover, the best period to perform such measurement campaigns is before or during an eruption. By comparing data before and after an eruption, it is possible to better understand the best precursors, thus allowing for a more precise prediction of the activity. Understanding the intensity and duration of lava flow enables volcanologists to decide whether the population of a specific area needs to be evacuated or if lava deviation measures have to be performed. Also, the knowledge of when and how a plume of volcanic ash will be emitted is useful for the advanced planning of route modifications, and if need be, flight cancellations; thereby, this information can help reduce inconvenience and discomfort to passengers.
+%In this article, we present some research activities performed in the Robotic Laboratory of the Dipartimento di Ingegneria Elettrica Elettronica e Informatica (DIEEI) at the University of Catania, Italy, concerning the adoption of robots for measuring volcanic activity. Catania is located in southern Italy on the Island of Sicily and is situated at the base of Mt. Etna, Europe’s largest active volcano. Etna has been responsible for a number of big eruptions that have destroyed or seriously damaged constructions, roads, and at times villages, shutdown airport activity in the area, and on some occasions, killed irresponsible tourists. In light of these situations, we began to closely cooperate with researchers of the Istituto Nazionale di Geofisica e Vulcanologia (INGV, the Italian Institute of Geophysics and Volcanology) and have since built several robot prototypes.
+%Interestingly, one of the first examples of robotic makers was the mythological God Hephaestus (whose ancient Roman name was Vulcano). In the Homer epic poem “The Odyssey,” Hephaestus is cited as the builder of some mechanical helpers for his workshop, which, according to myth, was situated inside Etna. In our laboratory, situated at Etna’s base, we are, in a way, continuing this old tradition of combining the robotics with the study of volcanoes.
+
+By G. Muscato, and that affect many populations.
+L. Cantelli, D. LongTherefore, improving the prediction
+
+\end{frame}
+\begin{frame}
+ \section{casa3}
+\end{frame}
+\begin{frame}
+ \section{casa4}
+\end{frame}
+ \section{casa5}
+\end{document}

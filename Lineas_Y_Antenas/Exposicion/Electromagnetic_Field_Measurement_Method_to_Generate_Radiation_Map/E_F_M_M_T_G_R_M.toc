@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Methodology To Generate Georeferenced Maps Of Non Ionizing Radiation In A City}{5}{0}{2}
+\beamer@subsectionintoc {2}{1}{Pre-engineering process}{5}{0}{2}
+\beamer@subsectionintoc {2}{2}{Measurement process}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Analysis data process}{14}{0}{2}
+\beamer@sectionintoc {3}{Measurements And Results}{16}{0}{3}
+\beamer@sectionintoc {4}{Conclusions}{23}{0}{4}
+\beamer@sectionintoc {5}{Bibliography}{24}{0}{5}

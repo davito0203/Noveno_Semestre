@@ -1,0 +1,1000 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass IEEEtran
+\begin_preamble
+% for subfigures/subtables
+\ifCLASSOPTIONcompsoc
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\else
+\usepackage[caption=false,font=footnotesize]{subfig}
+\fi
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding default
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement tbh
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Your Title"
+\pdf_author "Your Name"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered true
+\pdf_bookmarksopen true
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle false
+\pdf_quoted_options "pdfpagelayout=OneColumn, pdfnewwindow=true, pdfstartview=XYZ, plainpages=false"
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 2
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+You find the IEEEtran document class documentation here: http://mirror.ctan.org/ma
+cros/latex/contrib/IEEEtran/IEEEtran_HOWTO.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Title
+Proyecto 1:Caracterización de una línea microstrip usando parámetros de
+ dispersión 
+\end_layout
+
+\begin_layout Author
+Juan David Caicedo,Javier Orlando Araque, Felipe Gonzalez
+\end_layout
+
+\begin_layout Special Paper Notice
+Invited Paper
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+of course optional
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+This paper contains the develop of lines and antennas' firts proyect, this
+ include the characterization of microstrip line, the tools of the characterizat
+ion will be the calculation of er and the loss tangent with the use of the
+ dispersion of the parameters S (this paramenter will be result of the laborator
+y activity).
+ The develop of this paper include the teorical and practical description
+ of the microstrip behavior.
+ 
+\end_layout
+
+\begin_layout Keywords
+Microstrip, loss tangent, linneas, dispersion, parameters S
+\end_layout
+
+\begin_layout Section
+Introducción
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+The 
+\series bold
+
+\backslash
+IEEEPARstart
+\series default
+ command is needed in the first paragraph fo the document.
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+IEEEPARstart{
+\end_layout
+
+\end_inset
+
+ E
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}{
+\end_layout
+
+\end_inset
+
+l
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ proyecto desarrollado a continuación fue una asignación requerida en la
+ materia Líneas y Antenas, orientada por el ingeniero Javier Leonardo Araque
+ Quijano, dentro de ella nos dio las bases teóricas y los principios básicos
+ de la práctica.
+ Las mediciones fueron hechas en el laboratorio CMUN de la Universidad Nacional,
+ ubicado en el edificio 451 de la sede Bogotá, el día 26 de Noviembre de
+ 2011.
+ Para este proyecto se utilizaron líneas de transmisión Microstrip, estas
+ son una de las más usadas en la actualidad, puesto que se utiliza en la
+ construcción de circuitos integrados, debido a su facilidad de construcción
+ y bajo costo en la industria.
+ Los inconvenientes que se presentan en la tecnología son:  
+\end_layout
+
+\begin_layout Itemize
+El desfase de las velocidades (de fase) lo que lleve a una disperción.
+\end_layout
+
+\begin_layout Itemize
+la perdida por radición cuando se encuentran expuestas al medio ambiente.
+\end_layout
+
+\begin_layout Standard
+Estos inconvenientes pueden afectar nuestra experimentación, pero los datos
+ y la teoría nos han demostrado que su efecto sobre nuestro proyecto se
+ observa únicamente en el comportamiento puesto, que no se comportaran exactamen
+te como una línea de transmisión TEM perfecta, sino similarmente.
+ Esto se debe a la alta permitividad del sustrato que reducirá en gran parte
+ los efectos de dispersión y propagación, y esto es lógico, puesto que ante
+ una mayor permitividad del sustrato, las líneas de campo quedan más confinadas
+ dentro del mismo.
+\end_layout
+
+\begin_layout Section
+Objetivos
+\end_layout
+
+\begin_layout Subsection
+Generales
+\end_layout
+
+\begin_layout Standard
+Aplicar todos los conocimientos adquiridos en la asignatura, para la correcta
+ caracterización de un subtrato dielectrico.
+\end_layout
+
+\begin_layout Subsection
+Especificos
+\end_layout
+
+\begin_layout Itemize
+Desarrollar corectamente tecnicas para un buen diseño y fabricación de una
+ linea Microstrip
+\end_layout
+
+\begin_layout Itemize
+Familiarisarse con los equipos y las medidas tomadas de las microndas.
+ 
+\end_layout
+
+\begin_layout Section
+Metodologia
+\end_layout
+
+\begin_layout Standard
+El desarrollo de este proyecto incluyó un curso adecuado de lineas y antenas,
+ despues un diseño de una linea de microstrip basado en la teoría que recibimos
+ en la asignatura, el paso a seguir fue una correcta investigación de los
+ implementos de medición que se utilizaron, y por ultimo un análisis consiensudo
+ de los datos obtenidos.
+ 
+\end_layout
+
+\begin_layout Section
+Marco Téorico:
+\end_layout
+
+\begin_layout Subsection
+Aproximación a un modelo fisico de la línea microstrip 
+\end_layout
+
+\begin_layout Standard
+La composición de una línea microstrip es mediante a un conductor que posee
+ unas variables físicas, las cuales son el ancho (W) que se encuentra descrita
+ impresa en un sustrato, el cual también posee una anchura (H),permeabilidad
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+r y la polaridad a tierra por el lado contrario a la línea.
+ Una de las aproximaciones gráficas a lo que es físicamente es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../pegado15.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+figura 1.(a)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename ../../pegado16.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+figura 1.(b)
+\end_layout
+
+\begin_layout Subsection
+Aproximación a un modelo matemático
+\end_layout
+
+\begin_layout Standard
+Con la muestra de una aproximación física de la linea nos tomaremos el trabajo
+ de explicar su comportamiento (aunque la línea no está cubierta totalmente
+ por el dieléctrico), en primera medida diremos que las líneas de campo
+ se escapan de esta hacia el aire como se ve en la figura 1(b), esto provoca
+ que en esta línea (real) no se tenga comportamiento TEM perfecto como ya
+ lo habíamos mencionado, por el desfase de las velocidades de propagación,
+ una en el dieléctrico que queremos y otra en el medio (aire).
+ Lo que nos afectara, puesto que no consideraremos solo los efectos TM sino
+ también un TE, es decir un modelo de linea que exprese dichos efectos.
+ Por simplicidad en los análisis reales se usan otro tipo de modelos los
+ cuales son llamados cuasi-TEM (esto se debe gracias a las características
+ del material) Para resumir lo expresaremos en un análisis cuasi-estático,
+ Lo que nos llevara a representarlo mediante las ecuaciones básicas de propagaci
+ón de ondas por lo que la velocidad de fase, constante de propagación, y
+ la impedancia característica están dadas a continuación: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+_{Vp=\frac{c}{\sqrt{\epsilon_{e}}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\beta=k_{0}\sqrt{\epsilon_{e}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De lo que denotamos que 
+\begin_inset Formula $\epsilon_{e}$
+\end_inset
+
+ es la constante dieléctrica efectiva de la línea esta expresada asi: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+1<\epsilon_{e}<\epsilon_{r}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Criterio teórico del diseño 
+\end_layout
+
+\begin_layout Standard
+La constante dieléctrica efectiva de la que estebamos mencionando antes,
+ la podemos aproximar gracias a la ecuación: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{e}=\frac{\epsilon_{r}+1}{2}+\frac{\epsilon_{r}-1}{2}\frac{1}{\sqrt{1+\frac{12h}{w}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Analizando dicha ecuación, vemos como esta plantea los efectos del dieléctrico
+ de la linea y el medio al que es expuesto (aire) por tanto la permitividad
+ efectiva se expresa de la siguiente forma, la constante de un solo medio
+ igual en todas, es decir un medio de comportamiento homogéneo, todo esto
+ para poder utilizar las ecuaciones anteriores (1) y (2).
+\end_layout
+
+\begin_layout Standard
+Conocidas las dimensiones físicas de la línea,lo que nos lleva que la impedancia
+ característica de la línea puede ser calculado por:
+\begin_inset Formula 
+\begin{equation}
+Z{}_{0}\begin{cases}
+\frac{60}{\sqrt{\epsilon_{e}}}ln(\frac{8h}{w}+\frac{w}{4h}) & w/h\leq1\\
+\frac{120\pi}{\sqrt{\epsilon_{e}\left[\frac{w}{h}+1.393+0.667ln(\frac{w}{h}+1.444)\right]}} & w/h\geq1
+\end{cases}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La relación que interviene es la de W/h, pero sabemos que esta puede ser
+ calculada con la ecuación que presentaremos: 
+\end_layout
+
+\begin_layout Standard
+\align left
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula 
+\begin{equation}
+W/h\begin{cases}
+\frac{8e^{A}}{e^{2A}-2} & w/h\leq2\\
+2\pi & \left[B-1-ln(2B-1)+\frac{\epsilon_{r-1}}{2\epsilon_{r}}\left\{ ln(B-1)+0.39-\frac{0.61}{\epsilon_{r}}\right\} \right]w/h\geq2
+\end{cases}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y las Constantes involucradas están determinadas por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A=\frac{Z_{0}}{60}\sqrt{\frac{\epsilon_{r}+1}{2}}+\frac{\epsilon_{r}-1}{\epsilon_{r}+1}(0.23+\frac{0.11}{\epsilon_{r}})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+B=\frac{377\pi}{2Z_{o}\sqrt{\epsilon_{r}}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Como consideramos una linea de transmisión comportalmentalmente cuasi-TEM
+ debemos tener en cuenta las ecuaciones de atenuación tanto en el dieléctrico
+ como en el conductor, es decir: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha_{d}=\frac{k_{0}\epsilon_{r}(\epsilon_{e}-1)tan\delta}{2\sqrt{\epsilon_{e}}(\epsilon_{e}-1)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\alpha_{c}=\frac{R_{s}}{Z_{0}W}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Y con nuestro conocimiento de la teoría de lineas de transmisión y campos
+ electromagnéticos llegamos a saber que la tangente de perdidas y la oposición
+ del conductor (resistividad) están denotadas por las ecuaciones: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+tan\delta=\frac{\epsilon_{r}(\epsilon_{e}-1)}{\epsilon_{e}(\epsilon_{r}-1)}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+R_{s}=\sqrt{\frac{\omega\mu_{0}}{2\sigma}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+TÉCNICA DE CARACTERIZACIÓN DE DIELÉCTRICOS USANDO MICROSTRIP
+\end_layout
+
+\begin_layout Standard
+Ahora mostraremos el método llamado transformación de parámetros, el cual
+ tiene su desarrollo en forma de medición de parámetros S utilizando el
+ Analizador de redes, que esta en el laboratorio CMUN, con esto podemos
+ hallar la permitividad transformado dichos parámetros S a parámetros de
+ impedancia (Z), para después relacionarlos con lo establecido en la linea
+ de transmisión.
+ Esto se describe con las formulas (1) a (7) que son donde interviene los
+ parámetros de impedancia, para llevarlos a los parámetros S, finalmente
+ se obtienen la premitividad compleja.
+ Que es el desarrollo de nuestro proyecto .
+ Cabe notar que esta método fue el seleccionado puesto que se tiene los
+ implementos adecuados en nuestra universidad (laboratorio de comunicación
+ CMUN), el cual nos permite transformar parámetros, puesto que se toman
+ de forma directa los parámetros S y despues viene el desarrollo teorico
+ de los mismos siguiendo las ecuaciones aquí mostradas.
+ 
+\end_layout
+
+\begin_layout Standard
+Observando los parámetros S, y las relaciones de la ecuaciones podemos llevarlo
+ a un modo general para describir su comportamiento, es decir que con esto
+ podemos hallar la tangente de perdidas y la permitividad relativa.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\gamma=\left[-ln(S_{21}(\frac{A}{2}+\frac{1}{2})-\left[\frac{(S_{11}-1)(S_{11}+S_{11}A-A+1)}{2S_{21}}\right])\right]/l
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De lo que cabe anotar que la constante A esta dada por:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+A=\sqrt{-\frac{S_{11}^{2}+2S_{11}-S_{21}^{2}+1}{-S_{11}^{2}+2S_{11}+S_{11}^{2}-1}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ya teniendo estos datos nos ponemos en la tarea de hallar la impedancia
+ característica Zo con la ecuación:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Z_{O}=Z_{R}(A)
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con la certeza de que Zr es 50
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Paso siguiente es obtener el gamma, con esto podemos usar su resultado para
+ conocer la permitividad efectiva apartir de la siguiente formula :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\epsilon=\epsilon_{0}\epsilon_{r}=\epsilon_{0}(\epsilon_{r}^{'}-j\epsilon_{r}^{''})=-\frac{\gamma^{2}}{\omega^{2}\mu_{0}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recordando que:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\omega=2\pi f
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hay que analizar que en el calculo del valor de la permitividad relativa
+ efectiva(
+\begin_inset Formula $\epsilon_{r_{eff}}$
+\end_inset
+
+) que en la formula anterior esta como (
+\begin_inset Formula $\epsilon$
+\end_inset
+
+) la permitividad relativa tiene componentes reales y complejos(
+\begin_inset Formula $\epsilon_{r}$
+\end_inset
+
+).
+ Con lo que regresando a la formula (4) nos queda:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{r_{eff}}=(\frac{\epsilon_{r}+1}{2})+(\frac{\epsilon_{r}-1}{2})(\frac{1}{\sqrt{1+12H/W}})
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Despejamos esta ecuación y nos da:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+\epsilon_{r}=\frac{(2\epsilon_{r_{eff}*M)-M+1}}{M+1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+M=\frac{1}{\sqrt{1+12H/W}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+dandanos asi la forma de hallar la tangente de perdidas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+tan(\delta)=\frac{\epsilon_{r}^{''}}{\epsilon_{r}^{'}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Recordando que la expresión de la atenuación del conductor en la cual está
+ dada por la ecuación numero 10:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\alpha_{c}=\frac{R_{s}}{Z_{0}W}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Conociendo el valor de Rs, es la resistencia superficial y Zo, que es la
+ impedancia característica de 50ohm que lo vemos en la ecuación numero 12:
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{s}=\sqrt{\frac{\omega\mu_{0}}{2\sigma}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En la atenuación que es representada debe de notarse la expresión general
+ de gamma, para que solo quede la atenuación debida al dieléctrico.
+ Sabiendo que en el análisis hay que asociar la acción de los conectores
+ VNA, esto sera como si fuese una línea en serie con nuestra línea.
+ Entendido esto, los parámetros S11 y S21 son afectados dela siguiente forma:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{11}=S_{11medio}*e^{2\varphi Lx}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+S_{21}=S_{21medio}*e^{\varphi Lx}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con la anterior expresión 
+\begin_inset Formula $e^{2\varphi Lx}$
+\end_inset
+
+ se halla mediante los parámetros S11p y S21p de los conectores con la fórmula
+ del parámetro A.
+\end_layout
+
+\begin_layout Standard
+Nota: Se debe tener mucho cuidado y no confundir S11p y S21p con S11 y S21.
+ 
+\end_layout
+
+\begin_layout Standard
+El paso que seguirá sera el de probar nuestra linea, con los valores que
+ asignamos y se mostrará todas las gráficas resultantes debido a el uso
+ de esta en el implemento que encontramos en el laboratorio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\epsilon_{r}=5.3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h=1,66mm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $espesor=3\mu m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\epsilon_{r_{eff}}=8.851400$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+Z_{\infty}=\frac{120\pi}{\sqrt{\epsilon_{r_{eff}}(\frac{W}{H})+1.393+0,667ln(\frac{W}{H}+1,444)}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L_{e}=\frac{1}{2f_{0}\sqrt{\epsilon_{r_{eff}}\mu_{0}\epsilon_{0}}}=
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{equation}
+L=L_{e}-2\triangle L
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L=1,9901cm
+\end_layout
+
+\begin_layout Section
+Análisis de datos obtenidos
+\end_layout
+
+\begin_layout Standard
+Usando el scrib de implementación del método hecho en MATLAB da como resultado
+ las siguientes gráficas:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/juanda/Downloads/Permitividad Relativa.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+figura 3 Er vs F
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/juanda/Downloads/Impedancia.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+figura 4 Zo Vs F
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename /home/juanda/Downloads/Tangente de Perdidas.jpg
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+figura 5 tangente VS F
+\end_layout
+
+\begin_layout Section
+Observaciones de las gráficas
+\end_layout
+
+\begin_layout Standard
+En la grafica que representa la tangente e perdidas se puede apreciar un
+ valor casi constante después de los 2.4 GHz , antes de esta frecuencia se
+ observa unos picos debido las perdidas a frecuencias inferiores también
+ se pueden deber a atenuación en el conductor o ruido que se ingresa al
+ sistema ya que estas mediciones no siempre son exactas.
+ La grafica de Zo nos indica que se encuentra en el rango predicho entre
+ 45 y 40 para la frecuencia de 2.4 GHz se encuentra casi sobre la mitad del
+ rango se observa en la grafica que al aumentar la frecuencia disminuye
+ su valor En la grafica de er (permitividad relativa) se observan cambios
+ fuertes antes de la frecuencia escogida en este caso 2.4 GHz después de
+ esta frecuencia se observa n picos pero un poco más leves y el valor de
+ permitividad aumenta mientras aumenta la frecuencia.
+\end_layout
+
+\begin_layout Section
+Conclusiones
+\end_layout
+
+\begin_layout Itemize
+El desarrollo de este proyecto tuvo como fin afianzar nuestros conocimiento
+ de la asignatura lineas y antenas.
+\end_layout
+
+\begin_layout Itemize
+Durante el transcurso de la practica tuvimos relación con los equipos especializ
+ados de medición, y su forma de operar.
+\end_layout
+
+\begin_layout Itemize
+El manejo de los parámetros externos y afectaciones del medio son indispensables
+ para el correcto desarrollo del proyecto.
+\end_layout
+
+\begin_layout Itemize
+La posición de la linea fue un parámetro que no se tuvo en cuenta en el
+ proceso de fabricación, lo cual llega a afectar la medición, esto nos dará
+ que el análisis debe ser mucho más profundo.
+\end_layout
+
+\begin_layout Section
+Bibliografia
+\end_layout
+
+\begin_layout Itemize
+Microwave engineering, Pozar, Jhon wiley & son, New york, 1998
+\end_layout
+
+\begin_layout Itemize
+Komarov, S.
+ Wang, J.
+ Tang.
+ “Permittivity and Measurement”.
+ Universidad del Estado de Washington
+\end_layout
+
+\begin_layout Itemize
+https://sites.google.com/site/transmissionlinesantennas20113/
+\end_layout
+
+\begin_layout Itemize
+A.
+ Bianchi “Sistemas de ondas guiadas” Ed.
+ Marcombo Boixareu
+\end_layout
+
+\begin_layout Itemize
+R.E.
+ Collin, Foundations for Microwave Engineering.
+ New York: McGraw-Hill, 2 edition, 1992.
+ 
+\end_layout
+
+\begin_layout Itemize
+http://wcalc.sourceforge.net/ic_microstrip.html
+\end_layout
+
+\begin_layout Itemize
+http://mwrf.com/Article/ArticleID/17725/17725.html
+\end_layout
+
+\end_body
+\end_document

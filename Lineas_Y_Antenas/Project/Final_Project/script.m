@@ -1,0 +1,32 @@
+%primera parte
+clear all; format long;
+n=3;
+[frec, alfaOC, betaOC, alfaSC, betaSC]=CttProp(n);
+ 
+[epreoc]= EpsiRelat(betaOC);
+[epresc]= EpsiRelat(betaSC);
+figure;
+plot(frec,epreoc,frec,epresc,'r')
+title('Epsilon Relativo');
+xlabel('Frecuencia');
+ylabel('Magnitud Epsilon Relativo');
+grid;
+% epreoc=4.3*ones(631);
+% epresc=4.3*ones(631);
+alfacoc=alfaC(epreoc);
+alfacsc=alfaC(epresc);
+figure;
+plot(frec,alfacoc,frec,alfacsc,'r')
+title('Alfa por Conducción');
+xlabel('Frecuencia');
+ylabel('Magnitud Alfa por Conducción');
+grid;
+tandeltaoc = tanDelta(alfaOC,epreoc);
+tandeltasc = tanDelta(alfaSC,epresc);
+
+figure;
+plot(frec,tandeltaoc,frec,tandeltasc,'r')
+title('Tangente de Pérdidas');
+xlabel('Frecuencia');
+ylabel('Magnitud Tangente de Pérdidas');
+grid;

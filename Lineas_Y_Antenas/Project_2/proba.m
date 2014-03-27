@@ -1,0 +1,56 @@
+clear all; format long;
+%--------------------------------------------------------------------------
+%Constantes fisicas
+c=299792458;
+mu=pi*4e-7;
+ep=1/(c^2*mu);
+%--------------------------------------------------------------------------
+%Constantes del diseno
+n=4;%numero de antenas
+f=5.8e9;
+er=4.34;%epsilon relativo
+h=0.711e-3;%Altura en metros
+w=c/(2*f)*sqrt(2/(er+1));%Medida en metros
+erf=(er+1)/2+(er-1)/2*(1+12*h/w)^(-1/2);
+lref=c/(2*f*sqrt(erf));
+deltal=0.412*h*(erf+0.3)*(w/h+0.264)/((erf-0.258)*(w/h+0.8));
+L=lref-2*deltal;
+lambdam=c/(f*sqrt(erf));
+dl=1-1/n;%Distancia en longitudes de onda
+dist=lambdam*dl;%Distancia a centros
+dif=dist-w;
+%--------------------------------------------------------------------------
+%Determinación de las impedancias.
+k0=2*pi*f*sqrt(ep*mu);
+X=k0*w;
+si=quad(@(x)sinc(x/pi),0,X);
+ge= (-2+cos(X)+X*si+(sin(X)/X))/(120*(pi)^2);
+g12=1/(120*(pi)^2)*quad(@(O)((sin(X/2.*cos(O))./cos(O)).^2).*besselj(0,k0*L*sin(O)).*(sin(O)).^3,0,pi);
+rin=1/(2*(ge+g12));%Impedancia de entrada
+%Impedancia de acople al 31.3691 ohms l=27.483, w=2.74817 deg=360
+%--------------------------------------------------------------------------
+%Calculo de los valores del hibrido
+%Paredes laterales
+%l4=lambdam/4;
+w1=1.34609e-3;%en metros
+l1=7.14337e-3;%en metros
+zc1=50;
+%Paredes superior e inferior
+zc2=zc1/sqrt(2);
+w2=2.31696e-3;%en metros
+l2=6.93557e-3;%en metrosd
+%--------------------------------------------------------------------------
+%Radiacion total de la antena
+lam0=c/(f);
+the=pi/2;
+phi=0;
+antr=-1i*4*pi*w/lam0*sin(the)*sinc(pi*cos(the)*w/lam0)*cos(pi*L/lam0*sin(the)*sin(phi));
+%
+%
+% the=0:0.01:pi;
+% phi=0:0.01:pi; %315posiciones
+% for the=1:315
+%     for l=1:315
+%         antr=-1i*4*pi*w/lam0*sin()*sinc(pi*cos(the)*w/lam0)*cos(pi*L/lam0*sin(the)*sin(phi));
+%     end
+% end

@@ -1,0 +1,1 @@
+-localonly 2 -envall -mapall "C:\Program Files\FEKO\6.2\bin\feko_acml.csv.impi.exe" "antena1_fr_1_ada_1" "--no-total-progress-output" "--run-from-gui"

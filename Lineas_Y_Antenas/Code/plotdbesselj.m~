@@ -1,0 +1,18 @@
+s
+x = linspace(0,20,1000).';
+
+nmax = 6;
+
+y = zeros(length(x),nmax+1);
+
+leg = {};
+
+figure;
+for cont = 0:nmax
+    y(:,cont+1) = dbesselj(cont,x);
+    leg{cont+1} = num2str(cont);
+end
+
+plot(repmat(x,1,nmax+1),y);
+legend(leg{:});
+grid on

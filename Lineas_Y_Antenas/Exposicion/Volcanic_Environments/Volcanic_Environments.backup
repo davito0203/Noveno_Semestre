@@ -1,0 +1,67 @@
+\documentclass[xcolor=svgnames]{beamer}
+\usepackage[utf8x]{inputenc}
+%\usepackage[spanish]{babel}
+\usepackage{times}
+\usepackage{cite}
+\usepackage{xcolor}
+\usepackage{multicol}
+\usepackage{url}
+\usepackage{alltt}
+\usepackage{amsthm}
+\usepackage{color}
+\usepackage{CJK}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{textpos}
+\usepackage{fancybox}
+\usepackage{eurosym}
+%\usepackage{amssymb,amsfonts}
+%\usepackage{pict2e}
+%\usepackage{float}
+%\usepackage{graphics,graphicx,color,colortbl}
+%\usepackage{algorithm}
+\usepackage{graphics,graphicx,color,colortbl}
+\usepackage{subfigure}
+\usepackage{algorithm}
+
+
+\usetheme{Berlin}
+\useoutertheme{shadow}
+\useoutertheme{split}
+\useinnertheme{rounded}
+\useoutertheme{infolines}
+\usecolortheme{orchid}
+\usecolortheme{whale}
+\setbeamertemplate{navigation symbols}{}
+\setbeamercolor{bgcolor}{fg=black,bg=GhostWhite}
+\setbeamercovered{transparent}
+
+\title{Volcanic Environments}
+\subtitle{Robots for Exploration and Measurement}
+\author[David Martínez y Luis Melo]{David Ricardo Martínez Hernández \\ Luis Aníbal Melo Rivera}
+\institute[UNAL]{Faculty Engineer\\ Department Electric and Electronic \\ National University Of Colombia}
+\date[08/27/2012]{August $27$, $2012$}
+
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+\begin{frame}
+ \section{casa}
+\end{frame}
+\begin{frame}
+ \section{casa2}
+\end{frame}
+\begin{frame}
+ \section{casa3}
+\end{frame}
+\begin{frame}
+ \section{casa4}
+\end{frame}
+ \section{casa5}
+\end{document}

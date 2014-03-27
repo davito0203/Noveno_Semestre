@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Importance of Robots for Measurements in Volcanoes}{6}{0}{2}
+\beamer@sectionintoc {3}{Other projects concerning Robots and Volcanoes}{9}{0}{3}
+\beamer@sectionintoc {4}{ROBOVOLC}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{Prototype Robots}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{Robot}{17}{0}{4}
+\beamer@subsectionintoc {4}{3}{The Mechanical Platform}{19}{0}{4}
+\beamer@subsectionintoc {4}{4}{Control Hardware Architecture}{23}{0}{4}
+\beamer@subsectionintoc {4}{5}{The Science Sensor Package}{24}{0}{4}
+\beamer@sectionintoc {5}{Results}{26}{0}{5}
+\beamer@subsectionintoc {5}{1}{Scientific Data Collected}{26}{0}{5}
+\beamer@subsectionintoc {5}{2}{Video Camera Images}{33}{0}{5}
+\beamer@subsectionintoc {5}{3}{Infrared Camera Images}{34}{0}{5}
+\beamer@sectionintoc {6}{Conclusions}{35}{0}{6}
+\beamer@sectionintoc {7}{Bibliography}{39}{0}{7}
