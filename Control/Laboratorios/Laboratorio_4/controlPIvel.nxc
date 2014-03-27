@@ -1,0 +1,57 @@
+float Ref=600;
+float vel, velf, vel_ant=0, velf_ant=0;
+float e, e_ant=0;
+long dt, prev_tick, prev_deg = 0;
+float u, u_ant=0;
+const float kp = 0.1;     //Ganancia proporcional
+const float ki = 4.0;     //Ganancia Integral
+const float Ts = 0.01;    //Tiempo de muestreo (seg). NO modificar
+
+byte fileHandle;
+string s, us;
+short bytesWritten;
+string write;
+
+string speed_meter(){
+   dt = CurrentTick() - prev_tick;
+   long deg = MotorRotationCount(OUT_A) - prev_deg;
+   vel = deg * 1000.0 / dt;
+   prev_deg = MotorRotationCount(OUT_A);
+   prev_tick = CurrentTick();
+   return FormatNum("Vel: %5.2f g/s", vel);
+}
+
+float filtro_vel(){
+   velf=0.1584*velf_ant+0.4208*vel+0.4208*vel_ant;
+   vel_ant=vel;
+   velf_ant=velf;
+   return velf;   //Para NO filtrar la velocidad cambiar velf por vel solo aquí
+}
+
+task main(){
+     DeleteFile("salida.txt");
+     CreateFile("salida.txt", 20000, fileHandle);
+     while(!ButtonPressed(BTNCENTER, false)){
+                 TextOut(0, LCD_LINE2, speed_meter());
+                 velf=filtro_vel();
+                 
+                 // Algoritmo de Control PI de Velocidad
+                    e=Ref-velf;
+                    u=u_ant+kp*e-kp*e_ant+Ts*ki*e_ant;
+                    if (u>=100) {u=100;}
+                    if (u<=-100) {u=-100;}
+                    if (u>=0) {OnFwd(OUT_A,u);}
+                    else {OnRev(OUT_A,-u);}
+                    u_ant=u;
+                    e_ant=e;
+                 // Fin del Algoritmo
+                 
+                 s = NumToStr(velf);
+                 us = NumToStr(u);
+                 write = StrCat(s,",",us);
+                 WriteLnString(fileHandle,write, bytesWritten);
+                 Wait(7);
+                 ClearScreen();
+     }
+     CloseFile(fileHandle);
+}

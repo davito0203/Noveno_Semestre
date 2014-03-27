@@ -1,0 +1,201 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[utf8x]{inputenc}
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+
+\maketitle
+
+\section{Estructura jerárquica de automatización :}
+
+Infineon Technologies AG
+
+Empresa alemana de fabricación de semiconductores y sistemas de
+automatizaxión Empresa alemana de fabricación de semiconductores y sistemas de
+automatización. Surgió en 1999 como parte de la separación del área de
+manufactura de semiconductores de Siemens AG, la empresa madre. En 2010 la
+empresa contaba con más de 25000 empleados a nivel mundial ofreciendo todo tipo
+de servicios en el área de la automatización [1].
+
+Actualmente la empresa se desenvuelve en tres campos de acción:
+
+-Automática: proveedor de chips y tarjetas impresas para uso en el control de
+motores y transmisiones (microcontroladores, semiconductores de potencia y
+sensores), electronica para el comfort y la seguridad (Airbags, frenos ABS,
+Electronic Stability Control).
+
+-Industrial y Multimercado: Semiconductores de potencia para uso en actividades
+de generación, transmisión y consumo de energía eléctrica. Aplicaciones que van
+desde control de accionamientos para sistemas de potencia (electric drives),
+hasta electrodomesticos, módulos de energías renovables, msemiconductores para
+módulos de iluminación y tecnología LED, fuentes de poder para Pcs, electrónica
+de consumo, aplicaciones médicas, dispositivos de alta frecuencia, entre otros.
+
+-Circuitos Impresos y Seguridad: Microcontroladores para tarjetas SIM de
+telefonía celular, tarjetas bancarias y dispositivos electrónicos RFID para
+identificación de pasaportes y documentos oficiales.
+
+Visión de la empresa en cuanto a automatización, según su brochure [2]:
+
+
+
+
+
+
+
+
+
+
+
+En cada nivel desarrollan un resumen de las unidades mayoritariamente
+involucradas en él, como se muestra a continuación:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Nivel Supervisorio: Sistemas basados en procesamiento por computador.
+(industrial PC, en forma de computadoras personales, racks y “Panel Pcs”)
+Equipados con sistema operativo Windows embebido, y software específico
+para control y visualización. Estos sistemas generalmente estan interconectados
+en una red Gigabit LAN (o WLAN) o alguna otra de banda ancha, que permite
+visualizar información a nivel corporatio. Estos sistemas no poseen altas
+especificaciones de respuesta temporal, esta tarea recae en dispositivos del
+nivel de control. No contiene ninguna arquitectura de control. Como protección
+de datos, posee redundancia en las unidades de energía de los sistemas (UPSs)
+ *Industrial PC (IPC): Sistemas basados en software, que cumplen con
+requerimientos de operación en campo, como protección, consumo eficiente de
+energía, compatibilidad de software, sistemas de comunicación, etc.
+*Human Machine Interface (HMI): displays de texto, gráficas, mímicos, panel Pcs,
+etc. Tienen como objetivo ser lo más simples e ilustrativos posibles, tal que el
+operario los encuentre cómodos para su monitoreo.
+*Wireless Local Area Network (WLAN): Filtros de ruido y amplificadores de señal
+que permiten extender el alcance de alguna comunicación.
+
+-Nivel de Control: Sistemas de automatización (PLCs principalmente). Poseen gran
+capacidad de reacción en tiempo real (isochronous real-time Ethernet), y un
+sistema operativo propio en el cual está construida la arquitectura de control.
+Poseee protocolos de comunicación altamente eficientes (comunicaciones
+instantáneas). Estructura de PLCs modular y personalizable. Control de
+periféricos  comunicados por Fieldbus (algunos con un pre-procesamiento de
+datos).
+*Programable Logic Controller: posee alta confiabilidad, protección e inmunidad
+contra ruido e influencias externas (algunos, con protección contra el medio en
+el que operan: agua y polvo). Operación continua y en un rango ámplio de
+temperaturas, y seguridad de la información procesada.
+*HMI: Necesario para la viualización de los datos recogidos por los sensores.
+*Controller Area Network (CAN bus) como bus de campo ofrecido.
+
+-Nivel de Campo: Equipos terminales: sensores y actuadores, que en conjunto con
+unidades PLC o sistemas I/O remotos, realizan una captación de datos y un
+pre-procesamiento de la información adquiruida. Usualmente conección
+punto-a-punto. Algunas aplicaciones donde no se requiere de interconexión con el
+sistema de control globa, se usan microPLCs para ejecutar tareas individuales en
+campo.
+*Micro PLC: Aplicaciones sencillas (low-end apps): domésticas o de electrónica
+comercial, donde el objetivo es que sea económico, sencillo de usar, tamaño
+reducido y altamente eficiente en uso de energía
+*Control de motores y accionamientos: Tarjetas de control de los accionamientos
+(drives) de motores, desde brushless DC hasta motores de inducción y SRM.
+*Sensores: De alta precisión y rápida transferencia de datos. Sensores
+inteligentes, de medición sin contacto, a base de semiconductores.
+*Actuadores de los accionamientos: Semiconductores de potencia para controlar
+cargas inductivas de gran capacidad.
+*IO-Link: Estandar de comunicaciones sencillo.
+
+
+%[1] http://en.wikipedia.org/wiki/Infineon_Technologies
+
+%[2] http://www.infineon.com/cms/en/product/applications/automation/index.html
+
+
+
+
+\section{Siglas}
+\noindent
+CIM (Computer-Integrated Manufacturing): Manufactura integrada por computadora.
+Es un nmétodo de producción completamente controlado por computadora.
+Integra todos los procesos en marcha, de tal manera que todos se pueden
+comunicar entre sí, y tomar acciones al respecto. Establece tiempos más rápidos
+de producción y es menos sensible a errores. Posee gran flexibilidad de control,
+basandose en los famosos lazos cerrados de control. Los procesos de análisis,
+planeación, compras, costos, etc., estan conectados con los niveles de planta de
+producción a través de sistemas de computo, que ofreces completo control y
+monitoreo [1].
+
+CNC (Computer Numerical Control): Control Numérico por Computadora. Referido a
+la automatización de herramientas mecánicas, por medio de comandos o
+instrucciones abstractas, almacenadas en una unidad. El término hace referencia
+a toda la evolución del control concerniente a la integración de sistemas
+computarizados con los sistemas a controlar. Hoy en día, este control se realiza
+mediante software especializado CAD (Computer Aided Design) o CAM (Computer
+Aided Manufacturing) [2].
+
+DCS (Distributed Control System) Sistema de Control Distribuido: Sistema no
+localizado en un punto central, sino distribuido a en campo a través de los
+distintos subsistemas de cada proceso, los cuales pueden ser controlados por uno
+o más sistemas de control. Su eficiencia y utilidad está basada en la eficiente
+implementación de redes de comunicación de gran ancho de banda, para monitoreo y
+control. Ejemplo de esto es el sistema SCADA [3].
+
+ERP (Enterprise Resource Planning) Planeación de Recursos Empresariales: Sistema
+basado en software que integra todo tipo de información administrativa y
+gerencial de un proceso productivo. Abarca información financiera, contable, de
+manufactura, ventas, clientes, etc. Tiene como propósito facilitar la
+disponibilidad de la información en el ambiente corporativo y de negocios, así
+como brindar confiabilidad de la producción a los stakeholders [4].
+
+HMI (Human-Machine Interface): Interfaz Usuario-Máquina. Sistema de
+visualización de la información recogida de algún proceso de producción, tras
+haber pasado por algún tipo de procesamiento de datos, necesario para que la
+información tenga un significado físico correcto, y sea debidamente desplegada y
+entendida por los operarios del proceso. Típicamente es una tarea realizada en
+software, cuyos elementos de visualización son los mímicos, monitores, panel
+PCs, etc [5].
+
+IEEE (Institute of Electrical and Electronics Engineers): Instituto de
+Ingenieros Eléctricos y Electrónicos. “Es la asociación profesional más grande
+del mundo, dedicada al avance de la innovación tecnológica y la excelencia para
+el beneficio de la humanidad”. Institución dedicada principalmente a la
+estandarización de normas internacionales, además de un fuerte trabajo académico
+que incluye la gestión de una base de datos mundial en las áreas de conocimiento
+que comprende, organización de cientos de conferencias anuales y promotor de la
+ingeniería a nivel global [6].
+
+ISA (International Society of Automation): Sociedad internacional de
+Automatización. Incluye gran cantidad de disciplinas técnicas y de ingeniería. A
+nivel mundial, es de las sociedades más importantes en las actividades de
+estandarización en el área de automatización, y formación de profesionales.
+Asiste a miles de profesionales a nivel mundial, desde empresarios hasta
+investigadores [7].
+
+
+
+
+% [1] http://en.wikipedia.org/wiki/Computer-integrated_manufacturing
+
+%[2] http://en.wikipedia.org/wiki/Numerical_control
+
+%[3] http://en.wikipedia.org/wiki/Distributed_control_system
+
+%[4] http://en.wikipedia.org/wiki/Enterprise_resource_planning
+
+%[5] http://en.wikipedia.org/wiki/Human-machine_interface
+
+%[6] http://www.ieee.org/about/index.html
+
+%[7] http://en.wikipedia.org/wiki/International_Society_of_Automation
+
+\end{document}

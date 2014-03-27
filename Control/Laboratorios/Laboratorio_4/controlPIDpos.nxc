@@ -1,0 +1,60 @@
+long Ref=100;
+long pos=0, pos_ant=0;
+float P=0, D=0, I=0;
+float bi, ad, bd, br;
+float u=0, ut=0;
+const float kp = 0.01;  //Ganancia Proporcional
+const float ki = 0.00;  //Ganancia Integral
+const float kd = 0.00;  //Ganancia Derivativa
+const float Tf = 0.05;  //Tao del filtro pasa bajo acción derivativa
+                        //Tf=(kd/kp)/N, con N = [2,20]
+const float Tt = 1.10;  //Tt=h/kt, con kt: Término anti-windup
+const float  h = 0.01;  //Tiempo de muestreo en segs. NO modificar
+
+byte fileHandle;
+string s, us;
+short bytesWritten;
+string write;
+
+task main(){
+     DeleteFile("salida.txt");
+     CreateFile("salida.txt", 20000, fileHandle);
+     bi=ki*h;
+     ad=Tf/(Tf+h);
+     bd=kd/(Tf+h);
+     br=h/Tt;
+     while(!ButtonPressed(BTNCENTER, false)){
+                 pos = MotorRotationCount(OUT_A);
+                 TextOut(0, LCD_LINE2, StrCat("Posición: ",NumToStr(pos)));
+                 TextOut(0, LCD_LINE1, StrCat("Setpoint: ",NumToStr(Ref)));
+                 TextOut(0, LCD_LINE3, StrCat("u: ",NumToStr(u)));
+                 
+                 // Algoritmo de Control PID tomado de: K. J. Åström and R. M. Murray, Feedback systems:
+                 //	an introduction for scientists and engineers: Princeton University Press, 2008, Pag 316.
+
+                 P=kp*(Ref-pos);                         //se calcula la acción proporcional
+                 D=ad*D-bd*(pos-pos_ant);                //se actualiza la acción derivativa
+                 ut=P+I+D;                               //se calcula la salida de control
+                 if (ut>=100) {                          //se aplica saturación a la salida de control
+                    u=100;}
+                 else {
+                      if (ut<=-100) {u=-100;}
+                      else {u=ut;}
+                      }
+                 if (u>=0) {OnFwd(OUT_A,u);}             //se escribe la señal de control
+                 else {OnRev(OUT_A,-u);}
+                 I=I+bi*(Ref-pos)+br*(u-ut);             //se actualiza la acción integral
+                 pos_ant=pos;
+
+                 // Fin del Algoritmo
+                 
+                 s = NumToStr(pos);
+                 us = NumToStr(u);
+                 write = StrCat(s,",",us);
+                 WriteLnString(fileHandle,write, bytesWritten);
+                 Wait(7);   //NO modificar
+                 ClearScreen();
+     }
+     CloseFile(fileHandle);
+}
+

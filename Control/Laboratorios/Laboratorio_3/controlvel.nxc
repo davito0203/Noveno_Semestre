@@ -1,0 +1,39 @@
+long Ref=400;
+float vel;
+long dt;
+long prev_tick;
+long prev_deg = 0;
+
+byte fileHandle;
+string s;
+short bytesWritten;
+string write;
+
+string speed_meter(){
+   dt = CurrentTick() - prev_tick;
+   long deg = MotorRotationCount(OUT_A) - prev_deg;
+   vel = deg * 1000.0 / dt;
+   prev_deg = MotorRotationCount(OUT_A);
+   prev_tick = CurrentTick();
+   return FormatNum("Vel: %5.2f g/s", vel);
+}
+
+task main(){
+     DeleteFile("experimento.txt");
+     CreateFile("experimento.txt", 20000, fileHandle);
+     while(!ButtonPressed(BTNCENTER, false)){
+                 TextOut(0, LCD_LINE2, speed_meter());
+                 TextOut(0, LCD_LINE1, StrCat("Ref: ",NumToStr(Ref)));
+                 
+                 // Escriba aqui el algoritmo de Control de Velocidad
+                 
+                 // Fin del Algoritmo
+                 
+                 s = NumToStr(vel);
+                 write = StrCat(s," ");
+                 WriteLnString(fileHandle,write, bytesWritten);
+                 Wait(7);
+                 ClearScreen();
+     }
+     CloseFile(fileHandle);
+}

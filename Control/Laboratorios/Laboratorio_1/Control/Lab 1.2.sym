@@ -1,0 +1,267 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_003main	6	1	0	4	4
+1	j	6	1	4	4	3
+2	__FOMutex	9	0	8	4	2
+3	__D0main	6	1	12	4	12
+4	__signed_stack_001main	6	1	16	4	4
+5	__signed_stack_002main	6	1	20	4	6
+6	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	24	4	3
+7	__main_7qG2_i_7qG2_002	4	1	28	2	4
+8	__constVal20000	4	0	30	2	1
+9	__zfmain	1	1	32	1	3
+10	____initialize_global_data_return	1	1	33	1	3
+11	__constVal63	2	0	34	1	3
+12	fileHandle	1	1	35	1	3
+13	__constVal96	2	0	36	1	3
+14	__constVal1	2	0	37	1	2
+15	__constVal0	2	1	38	1	14
+16	__constVal3	2	0	39	1	3
+17	__OnRev_Tmp	2	1	40	1	2
+18	__constVal32	2	0	41	1	9
+19	__constVal90	2	0	42	1	1
+20	__FCArgs	8	0	2	4	3
+21	__FCArgs.Result	3	1	44	2	3
+22	__FCArgs.FileHandle	1	1	46	1	3
+23	__FOArgs	8	0	4	12	5
+24	__FOArgs.Result	3	1	48	2	5
+25	__FOArgs.FileHandle	1	1	50	1	5
+26	__FOArgs.Filename	7	0	52	4	5
+27	__FOArgs.Filename.Filename_type	1	0	0	1	0
+28	__FOArgs.Length	5	1	56	4	5
+29	__TextOutArgs	8	0	4	16	10
+30	__TextOutArgs.Result	2	1	60	1	10
+31	__TextOutArgs.Location	8	0	2	4	10
+32	__TextOutArgs.Location.X	4	1	64	2	10
+33	__TextOutArgs.Location.Y	4	1	66	2	10
+34	__TextOutArgs.Text	7	0	68	4	10
+35	__TextOutArgs.Text.Text_type	1	0	0	1	0
+36	__TextOutArgs.Options	5	1	72	4	10
+37	__FWriteArgs	8	0	4	12	5
+38	__FWriteArgs.Result	3	1	76	2	5
+39	__FWriteArgs.FileHandle	1	1	78	1	5
+40	__FWriteArgs.Buffer	7	0	80	4	5
+41	__FWriteArgs.Buffer.Buffer_type	1	0	0	1	0
+42	__FWriteArgs.Length	5	1	84	4	5
+43	__FDArgs	8	0	2	8	3
+44	__FDArgs.Result	3	1	88	2	3
+45	__FDArgs.Filename	7	0	90	4	3
+46	__FDArgs.Filename.Filename_type	1	0	0	1	0
+47	__ArrHelper__main_244_1	7	0	92	4	2
+48	__ArrHelper__main_244_1.__ArrHelper__main_244_1_type	1	0	0	1	0
+49	__FWriteLn	7	0	94	4	1
+50	__FWriteLn.__FWriteLn_type	1	0	0	1	0
+51	__ArrHelper__main_244_0	7	0	96	4	2
+52	__ArrHelper__main_244_0.__ArrHelper__main_244_0_type	1	0	0	1	0
+53	__constStr0011	7	0	98	4	1
+54	__constStr0011.__constStr0011_type	1	1	0	1	0
+55	__constStr0010	7	0	100	4	1
+56	__constStr0010.__constStr0010_type	1	1	0	1	0
+57	__strbufmain	7	0	102	4	10
+58	__strbufmain.__strbufmain_type	1	0	0	1	0
+59	write	7	0	104	4	2
+60	write.write_type	1	0	0	1	0
+61	s	7	0	106	4	2
+62	s.s_type	1	0	0	1	0
+63	__FWriteFlattenBuf	7	0	108	4	2
+64	__FWriteFlattenBuf.__FWriteFlattenBuf_type	1	0	0	1	0
+65	__strretvalmain	7	0	110	4	4
+66	__strretvalmain.__strretvalmain_type	1	0	0	1	0
+67	__constStr0009	7	0	112	4	2
+68	__constStr0009.__constStr0009_type	1	1	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	23	0	#line 23 "K:\Control\Lab 1.2.nxc"
+0	24	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	23	2	#line 23 "K:\Control\Lab 1.2.nxc"
+0	23	2	#line 23 "K:\Control\Lab 1.2.nxc"
+0	24	2	#pragma macro 5
+0	24	2		mov __FDArgs.Filename, __constStr0009
+0	24	4		syscall 8, __FDArgs
+0	24	7		mov __D0main, __FDArgs.Result
+0	5830	9	#line 5830 "K:\Control\Lab 1.2.nxc"
+0	23	9	#line 23 "K:\Control\Lab 1.2.nxc"
+0	23	9	#line 23 "K:\Control\Lab 1.2.nxc"
+0	24	9	#line 24 "K:\Control\Lab 1.2.nxc"
+0	25	9	#pragma macro 7
+0	25	9		acquire __FOMutex
+0	25	10		mov __FOArgs.Filename, __constStr0009
+0	25	12		mov __FOArgs.Length, __constVal20000
+0	25	14		syscall 1, __FOArgs
+0	25	17		mov fileHandle, __FOArgs.FileHandle
+0	25	19		mov __D0main, __FOArgs.Result
+0	25	21		release __FOMutex
+0	5834	22	#line 5834 "K:\Control\Lab 1.2.nxc"
+0	24	22	#line 24 "K:\Control\Lab 1.2.nxc"
+0	24	22	#line 24 "K:\Control\Lab 1.2.nxc"
+0	26	22	#line 26 "K:\Control\Lab 1.2.nxc"
+0	27	22		set __signed_stack_001main, 4
+0	27	25	#line 27 "K:\Control\Lab 1.2.nxc"
+0	27	25	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	25		sub __signed_stack_001main, __signed_stack_001main, __constVal1
+0	27	29	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	29		brtst 0, __NXC_Label_605, __signed_stack_001main
+0	27	32	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	32		set __main_7qG2_i_7qG2_002, 0
+0	27	35	#line 27 "K:\Control\Lab 1.2.nxc"
+0	27	35	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	35		mov __signed_stack_002main, __main_7qG2_i_7qG2_002
+0	27	37	#line 27 "K:\Control\Lab 1.2.nxc"
+0	27	37	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	37		set __D0main, 100
+0	27	40	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	40		cmp 2, __zfmain, __signed_stack_002main, __D0main
+0	27	44	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	44		mov __D0main, __zfmain
+0	27	46	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	46		brtst 4, __NXC_Label_609, __zfmain
+0	27	49	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	49		jmp __NXC_Label_610
+0	27	51	#line 27 "K:\Control\Lab 1.2.nxc"
+0	27	51	#line 27 "K:\Control\Lab 1.2.nxc"
+0	28	51		add __main_7qG2_i_7qG2_002, __main_7qG2_i_7qG2_002, __constVal1
+0	28	55	#line 28 "K:\Control\Lab 1.2.nxc"
+0	29	55		jmp __NXC_Label_608
+0	28	57	#line 28 "K:\Control\Lab 1.2.nxc"
+0	29	57		set __D0main, 10
+0	29	60	#line 29 "K:\Control\Lab 1.2.nxc"
+0	30	60	#pragma macro 7
+0	30	60		setout __constVal0, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	5890	83	#line 5890 "K:\Control\Lab 1.2.nxc"
+0	29	83	#line 29 "K:\Control\Lab 1.2.nxc"
+0	29	83	#line 29 "K:\Control\Lab 1.2.nxc"
+0	30	83		set __Wait_7qG2_ms_7qG2_000_inline_main, 40
+0	29	86	#line 29 "K:\Control\Lab 1.2.nxc"
+0	7921	86	#line 7921 "NXCDefs.h"
+0	7922	86		wait 40
+0	7921	88	#line 7921 "NXCDefs.h"
+0	30	88	#line 30 "K:\Control\Lab 1.2.nxc"
+0	31	88	#line 31 "K:\Control\Lab 1.2.nxc"
+0	32	88		getout j, __constVal0, 14
+0	31	92	#line 31 "K:\Control\Lab 1.2.nxc"
+0	31	92	#line 31 "K:\Control\Lab 1.2.nxc"
+0	31	92	#line 31 "K:\Control\Lab 1.2.nxc"
+0	32	92		set __signed_stack_002main, 0
+0	31	95	#line 31 "K:\Control\Lab 1.2.nxc"
+0	31	95	#line 31 "K:\Control\Lab 1.2.nxc"
+0	32	95		set __signed_stack_003main, 20
+0	31	98	#line 31 "K:\Control\Lab 1.2.nxc"
+0	31	98	#line 31 "K:\Control\Lab 1.2.nxc"
+0	32	98		strcat __strbufmain, __constStr0010
+0	32	102	#line 32 "K:\Control\Lab 1.2.nxc"
+0	32	102	#line 32 "K:\Control\Lab 1.2.nxc"
+0	33	102		mov __TextOutArgs.Location.X, __signed_stack_002main
+0	32	104	#line 32 "K:\Control\Lab 1.2.nxc"
+0	33	104		mov __TextOutArgs.Location.Y, __signed_stack_003main
+0	32	106	#line 32 "K:\Control\Lab 1.2.nxc"
+0	33	106		set __TextOutArgs.Options, 0
+0	32	109	#line 32 "K:\Control\Lab 1.2.nxc"
+0	33	109		mov __TextOutArgs.Text, __strbufmain
+0	32	111	#line 32 "K:\Control\Lab 1.2.nxc"
+0	33	111		syscall 13, __TextOutArgs
+0	32	114	#line 32 "K:\Control\Lab 1.2.nxc"
+0	32	114	#line 32 "K:\Control\Lab 1.2.nxc"
+0	32	114	#line 32 "K:\Control\Lab 1.2.nxc"
+0	32	114	#line 32 "K:\Control\Lab 1.2.nxc"
+0	33	114		set __signed_stack_002main, 10
+0	32	117	#line 32 "K:\Control\Lab 1.2.nxc"
+0	32	117	#line 32 "K:\Control\Lab 1.2.nxc"
+0	33	117		set __signed_stack_003main, 10
+0	32	120	#line 32 "K:\Control\Lab 1.2.nxc"
+0	32	120	#line 32 "K:\Control\Lab 1.2.nxc"
+0	33	120		mov __D0main, j
+0	33	122	#line 33 "K:\Control\Lab 1.2.nxc"
+0	33	122	#line 33 "K:\Control\Lab 1.2.nxc"
+0	34	122		mov __TextOutArgs.Location.X, __signed_stack_002main
+0	33	124	#line 33 "K:\Control\Lab 1.2.nxc"
+0	34	124		mov __TextOutArgs.Location.Y, __signed_stack_003main
+0	33	126	#line 33 "K:\Control\Lab 1.2.nxc"
+0	34	126		set __TextOutArgs.Options, 0
+0	33	129	#line 33 "K:\Control\Lab 1.2.nxc"
+0	34	129		numtostr __TextOutArgs.Text, __D0main
+0	33	132	#line 33 "K:\Control\Lab 1.2.nxc"
+0	34	132		syscall 13, __TextOutArgs
+0	33	135	#line 33 "K:\Control\Lab 1.2.nxc"
+0	33	135	#line 33 "K:\Control\Lab 1.2.nxc"
+0	33	135	#line 33 "K:\Control\Lab 1.2.nxc"
+0	33	135	#line 33 "K:\Control\Lab 1.2.nxc"
+0	34	135		mov __D0main, j
+0	34	137	#line 34 "K:\Control\Lab 1.2.nxc"
+0	35	137		numtostr __strretvalmain, __D0main
+0	34	140	#line 34 "K:\Control\Lab 1.2.nxc"
+0	35	140		strcat __strbufmain, __strretvalmain
+0	34	144	#line 34 "K:\Control\Lab 1.2.nxc"
+0	35	144		mov s, __strbufmain
+0	34	146	#line 34 "K:\Control\Lab 1.2.nxc"
+0	34	146	#line 34 "K:\Control\Lab 1.2.nxc"
+0	35	146		strcat __strbufmain, s
+0	34	150	#line 34 "K:\Control\Lab 1.2.nxc"
+0	35	150		mov __ArrHelper__main_244_0, __strbufmain
+0	34	152	#line 34 "K:\Control\Lab 1.2.nxc"
+0	35	152		strcat __strbufmain, __constStr0011
+0	34	156	#line 34 "K:\Control\Lab 1.2.nxc"
+0	35	156		mov __ArrHelper__main_244_1, __strbufmain
+0	35	158	#line 35 "K:\Control\Lab 1.2.nxc"
+0	36	158		strcat __strretvalmain, __ArrHelper__main_244_0, __ArrHelper__main_244_1
+0	35	163	#line 35 "K:\Control\Lab 1.2.nxc"
+0	36	163		strcat __strbufmain, __strretvalmain
+0	35	167	#line 35 "K:\Control\Lab 1.2.nxc"
+0	36	167		mov write, __strbufmain
+0	35	169	#line 35 "K:\Control\Lab 1.2.nxc"
+0	35	169	#line 35 "K:\Control\Lab 1.2.nxc"
+0	36	169	#pragma macro 9
+0	36	169		mov __FWriteArgs.FileHandle, fileHandle
+0	36	171		strtoarr __FWriteFlattenBuf, write
+0	36	174		arrbuild __FWriteArgs.Buffer, __FWriteFlattenBuf, __FWriteLn
+0	36	179		arrsize __FWriteArgs.Length, __FWriteArgs.Buffer
+0	36	182		syscall 4, __FWriteArgs
+0	6004	185	#line 6004 "K:\Control\Lab 1.2.nxc"
+0	35	185	#line 35 "K:\Control\Lab 1.2.nxc"
+0	35	185	#line 35 "K:\Control\Lab 1.2.nxc"
+0	36	185	#line 36 "K:\Control\Lab 1.2.nxc"
+0	37	185		set __Wait_7qG2_ms_7qG2_000_inline_main, 8
+0	36	188	#line 36 "K:\Control\Lab 1.2.nxc"
+0	7921	188	#line 7921 "NXCDefs.h"
+0	7922	188		wait 8
+0	7921	190	#line 7921 "NXCDefs.h"
+0	37	190	#line 37 "K:\Control\Lab 1.2.nxc"
+0	38	190	#line 38 "K:\Control\Lab 1.2.nxc"
+0	39	190		jmp __NXC_Label_611
+0	38	192	#line 38 "K:\Control\Lab 1.2.nxc"
+0	38	192	#line 38 "K:\Control\Lab 1.2.nxc"
+0	39	192	#line 39 "K:\Control\Lab 1.2.nxc"
+0	40	192	#pragma macro 10
+0	40	192		neg __OnRev_Tmp, __constVal90
+0	40	195		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6026	218	#line 6026 "K:\Control\Lab 1.2.nxc"
+0	39	218	#line 39 "K:\Control\Lab 1.2.nxc"
+0	39	218	#line 39 "K:\Control\Lab 1.2.nxc"
+0	40	218		set __Wait_7qG2_ms_7qG2_000_inline_main, 400
+0	39	221	#line 39 "K:\Control\Lab 1.2.nxc"
+0	7921	221	#line 7921 "NXCDefs.h"
+0	7922	221		wait 400
+0	7921	223	#line 7921 "NXCDefs.h"
+0	40	223	#line 40 "K:\Control\Lab 1.2.nxc"
+0	41	223	#line 41 "K:\Control\Lab 1.2.nxc"
+0	42	223		jmp __NXC_Label_604
+0	41	225	#line 41 "K:\Control\Lab 1.2.nxc"
+0	42	225	#line 42 "K:\Control\Lab 1.2.nxc"
+0	43	225	#pragma macro 7
+0	43	225		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	6043	248	#line 6043 "K:\Control\Lab 1.2.nxc"
+0	42	248	#line 42 "K:\Control\Lab 1.2.nxc"
+0	42	248	#line 42 "K:\Control\Lab 1.2.nxc"
+0	43	248	#pragma macro 5
+0	43	248		mov __FCArgs.FileHandle, fileHandle
+0	43	250		syscall 5, __FCArgs
+0	43	253		mov __D0main, __FCArgs.Result
+0	6046	255	#line 6046 "K:\Control\Lab 1.2.nxc"
+0	42	255	#line 42 "K:\Control\Lab 1.2.nxc"
+0	42	255	#line 42 "K:\Control\Lab 1.2.nxc"
+0	43	255		exit -1, -1
+1	79	0	#line 79 "K:\Control\Lab 1.2.nxc"
+1	80	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	K:\Control\Lab 1.2.nxc
+1	__initialize_global_data	258	K:\Control\Lab 1.2.nxc

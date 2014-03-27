@@ -1,0 +1,30 @@
+format long;
+load datos1.txt
+tiempo = datos1(:,1);
+salida = datos1(:,2);
+entrada = datos1(:,3);
+figure;
+plot(tiempo,salida,'b',tiempo,entrada,'r')
+title('Respuesta ante una entrada escalon'), grid on
+legend('Respuesta del sistema','Señal de entrada al sistema'),xlabel('Tiempo (s)')
+
+k=2.014630/1;
+mp=(max(salida)-k)/k;
+am=log(1/mp)/(sqrt((log(1/mp))^2+pi^2));%e raro
+tp=9.761719-3.480469;
+wd=2*pi/tp;
+wn=wd/sqrt(1-am^2);
+num=k*wn^2;
+den=[1 2*am*wn wn^2];
+G1=tf(num,den);
+figure, plot(tiempo,salida,'b')
+hold on
+step(G1,'r',25)
+%legend('Respuesta del Sistema Real','Respuesta del Sistema Aproximado a 2do Orden')
+am1=0.28;
+den1=[1 2*am*wn wn^2];
+G2=tf(num,conv(den1,[1/4 1]));
+figure, plot(tiempo,salida,'b')
+hold on
+step(G2,'r',25)
+data=[tiempo,salida];

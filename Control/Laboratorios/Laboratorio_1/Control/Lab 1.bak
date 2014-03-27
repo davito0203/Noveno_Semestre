@@ -1,0 +1,59 @@
+long j;
+task main(){
+
+//
+ TextOut(0,50,"David 261931");
+ TextOut(0,40,"Felipe 285728");
+ TextOut(0,35,"Ricardo 261613");
+ TextOut(0,25,"Oscar 261683");
+
+//  Posicion
+
+repeat(4){
+for( int i=0; i<=100; i+=1){
+  OnFwd(OUT_A,10);
+  Wait(40);
+  j=MotorRotationCount(OUT_A);
+  TextOut(0,20,"Conteo: ");
+  NumOut(10,10,j);
+}
+  OnRev(OUT_A,90);
+  Wait(400);
+}
+  Off(OUT_A);
+
+
+//  Velocidad
+/*
+repeat(4){
+for( int i=0; i<=100; i+=1){
+  OnFwd(OUT_A,i);
+  Wait(40);
+  j=MotorRotationCount(OUT_A);
+  NumOut(10,10,j);
+}
+  OnRev(OUT_A,-10);
+  Wait(40);
+}
+   Off(OUT_A);
+*/
+
+// Sensor de Intensidad de Luz
+/*
+while(true){
+SetSensorType(IN_1, SENSOR_TYPE_LIGHT_ACTIVE);
+//SetSensorType(IN_1, SENSOR_TYPE_SOUND_DB);
+j=Sensor(IN_1);
+NumOut(10,10,j);
+Wait(200);
+if(j<=200){
+ OnFwd(OUT_A,100);
+}else{
+ Off(OUT_A);
+} */
+}
+
+
+}
+
+

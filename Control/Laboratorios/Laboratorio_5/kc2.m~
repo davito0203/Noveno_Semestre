@@ -1,0 +1,15 @@
+%function kc1=kc()
+clear all; format long;
+num=200; den1=100; den2=200; error=0.03;
+syms kc;
+
+fr=1-num*kc/(den1+den2*kc);
+
+kc=eval(solve('=error'))
+
+
+%num=200; den1=100; den2=200; error=0.03;
+
+
+
+

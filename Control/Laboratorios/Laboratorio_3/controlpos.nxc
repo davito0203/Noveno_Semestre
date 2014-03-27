@@ -1,0 +1,28 @@
+long Ref=180;
+long posicion;
+
+byte fileHandle;
+string s;
+short bytesWritten;
+string write;
+
+task main(){
+     DeleteFile("experimento.txt");
+     CreateFile("experimento.txt", 20000, fileHandle);
+     while(!ButtonPressed(BTNCENTER, false)){
+                 posicion = MotorRotationCount(OUT_A);
+                 TextOut(0, LCD_LINE2, StrCat("Posición: ",NumToStr(posicion)));
+                 TextOut(0, LCD_LINE1, StrCat("Setpoint: ",NumToStr(Ref)));
+                 
+                 // Escriba aqui el algoritmo de Control de Posición
+                 
+                 // Fin del Algoritmo
+                 
+                 s = NumToStr(posicion);
+                 write = StrCat(s," ");
+                 WriteLnString(fileHandle,write, bytesWritten);
+                 Wait(7);
+                 ClearScreen();
+     }
+     CloseFile(fileHandle);
+}

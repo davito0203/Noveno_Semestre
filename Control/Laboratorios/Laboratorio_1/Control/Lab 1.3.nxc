@@ -1,0 +1,73 @@
+long j;
+task main(){
+
+// TextOut: permite mostrar texto en la pantalla LCD del NXT
+ TextOut(0,50,"David 261931");
+ TextOut(0,40,"Felipe 285728");
+ TextOut(0,35,"Ricardo 261613");
+ TextOut(0,25,"Oscar 261683");
+
+//  Posicion
+
+repeat(4){
+for( int i=0; i<=100; i+=1){
+// OnFwd: Acciona el motor del puerto de salida A
+  OnFwd(OUT_A,10);
+// Wait: Detiene la ejecucion del programa durante el tiempo determinado
+  Wait(40);
+// MotorRotationCount: Permite conocer la posicion angular del motor
+  j=MotorRotationCount(OUT_A);
+  TextOut(0,20,"Conteo: ");
+//NumOut: Muesra el valor asignado en una posicion determinada
+  NumOut(10,10,j);
+}
+// OnRev: Acciona el motor en direccion contraria
+  OnRev(OUT_A,90);
+  Wait(400);
+}
+// Off: Detiene el motor del puerto de salida A
+  Off(OUT_A);
+
+
+//  Velocidad
+
+repeat(4){
+//for: permite aumentar la velocidad del motor
+for( int i=0; i<=100; i+=1){
+// OnFwd: Acciona el motor del puerto de salida A
+  OnFwd(OUT_A,i);
+// Wait: Detiene la ejecucion del programa durante el tiempo determinado
+  Wait(40);
+// MotorRotationCount: Permite conocer la posicion angular del motor
+  j=MotorRotationCount(OUT_A);
+  TextOut(0,20,"Conteo: ");
+  NumOut(10,10,j);
+}
+// OnRev: Acciona el motor en direccion contraria
+  OnRev(OUT_A,-10);
+  Wait(40);
+}
+// Off: Detiene el motor del puerto de salida A
+   Off(OUT_A);
+
+// Sensor de Intensidad de Luz
+
+while(true){
+//SetSensorType: Indica el tipo de sensor usado y el puerto de entrada
+SetSensorType(IN_1, SENSOR_TYPE_LIGHT_ACTIVE);
+// Sensor: devuelve el valor leido por el sensor
+j=Sensor(IN_1);
+TextOut(0,20,"Conteo: ");
+NumOut(10,10,j);
+Wait(200);
+if(j<=200){
+ OnFwd(OUT_A,100);
+}else{
+ Off(OUT_A);
+}
+}
+
+
+}
+
+
