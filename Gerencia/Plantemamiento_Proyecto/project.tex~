@@ -1,0 +1,63 @@
+\documentclass[10pt,graphicx,caption,rotating]{article}
+\textheight=27cm
+\textwidth=20cm
+\topmargin=-4.5cm
+\oddsidemargin=-1.5cm
+\usepackage[utf8x]{inputenc}
+\usepackage[activeacute,spanish]{babel}
+\usepackage{amssymb,amsfonts}
+\usepackage[tbtags]{amsmath}
+\usepackage{pict2e}
+\usepackage{float}
+\usepackage[all]{xy}
+\usepackage{graphics,graphicx,color,colortbl}
+\usepackage{times}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage{cite}
+\usepackage{url}
+\usepackage[tbtags]{amsmath}
+\usepackage{amsmath,amssymb,amsfonts,amsbsy}
+\usepackage{bm}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage[centerlast, small]{caption}
+\usepackage[colorlinks=true, citecolor=blue, linkcolor=black, urlcolor=blue, breaklinks=true]{hyperref}
+
+\begin{document}
+\title{\huge \textbf{ConsulNet}}
+\author{David Ricardo Martínez Hernández}
+\date{}
+\maketitle
+
+\section{Planteamiento del Problema}
+\noindent
+En los hospitales colombianos especialmente en emergencias y medicina general se encuentran sobre saturados por al gran cantidad de personas que acude al médico por diferentes tipos de enfermedades o síntomas. La gran mayoría de dichas citas o consultas se podrían hacer desde la casa dado que no necesita gran cantidad de revisiones, es decir las personas o usuarios podrían hacerlo ellos, solo necesitan el diagnostico del médico para que pueda decir que es lo que el paciente pueda tener.
+
+\section{Posible solución}
+\noindent
+Para los hospitales colombianos es importante descongestionar los hospitales, especialmente en emergencias y medicina general, para ello se implementara videoconsultas con un medico certificado por el Ministerio de salud. Las comunicaciones entre el medico y el paciente se harán por medio de internet interconectados por medio de un servidor para tener las conversaciones de manera muy confidencial. Por medio de este sistema se podrán hacer consultas desde cualquier parte de Colombia o del mundo con el médico de confianza o con el médico certificado. Si es necesario medicar al paciente esto se hará por medio de una hoja impresa y con el sello del medico, o bien sea el caso con un documento en formato digital y protegido por la firma virtual del médico, así mismo las incapacidades que se den por enfermedades  transitorias. Primero se implementara en la ciudad de Bogotá y de manera paulatina se implementara en las grandes ciudades y pueblos de Colombia.
+
+\section{Stakeholders}
+\begin{itemize}
+ \item Usuarios de los Hospitales
+ \item Gerentes de los Hospitales
+ \item Médicos
+ \item Ingenieros Electrónicos
+ \item Ingenieros de Sistemas
+ \item Ingenieros Electricistas
+ \item Ministerio de Salud
+ \item Enfermeras
+ \item Abogados
+ \item Ambulancias
+ \item Empresas de Internet
+ \item Alcalde de las ciudades y de los pueblos
+ \item Estudiantes de Pregrado y de Posgrado
+ \item Desarrolladores de procesadores
+ \item Vendedores de Computadores
+\end{itemize}
+
+\end{document}
