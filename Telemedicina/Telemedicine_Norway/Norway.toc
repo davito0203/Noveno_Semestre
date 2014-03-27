@@ -1,0 +1,16 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Noruega}{3}{0}{1}
+\beamer@subsectionintoc {1}{2}{Evoluci\IeC {\'o}n de algunas definiciones de Telemedicina}{12}{0}{1}
+\beamer@sectionintoc {2}{Historia}{16}{0}{2}
+\beamer@subsectionintoc {2}{1}{Historia Mundial}{16}{0}{2}
+\beamer@subsectionintoc {2}{2}{Historia en Noruega}{20}{0}{2}
+\beamer@sectionintoc {3}{Servicios}{27}{0}{3}
+\beamer@sectionintoc {4}{Desventajas}{34}{0}{4}
+\beamer@sectionintoc {5}{Novedades}{38}{0}{5}
+\beamer@subsectionintoc {5}{1}{ITTS - Implementaci\IeC {\'o}n de soluciones de telemedicina transnacionales}{38}{0}{5}
+\beamer@subsectionintoc {5}{2}{La implantaci\IeC {\'o}n de diez proyectos}{42}{0}{5}
+\beamer@sectionintoc {6}{Publicaciones Cient\IeC {\'\i }ficas}{54}{0}{6}
+\beamer@sectionintoc {7}{Reportes}{55}{0}{7}
+\beamer@sectionintoc {8}{Bibliograf\IeC {\'\i }a}{56}{0}{8}

@@ -1,0 +1,88 @@
+\documentclass[12pt,graphicx,caption,rotating]{article}
+\textheight=24cm
+\textwidth=17cm
+\topmargin=-2cm
+\oddsidemargin=0cm
+\usepackage[utf8x]{inputenc}
+\usepackage[activeacute,spanish]{babel}
+\usepackage{amssymb,amsfonts}
+\usepackage[tbtags]{amsmath}
+%7\usepackage{slashbox}
+\usepackage{pict2e}
+\usepackage{float}
+\usepackage[all]{xy}
+\usepackage{graphics,graphicx,color,colortbl}
+\usepackage{times}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage{cite}
+\usepackage{url}
+\usepackage[tbtags]{amsmath}
+\usepackage{amsmath,amssymb,amsfonts,amsbsy}
+\usepackage{bm}
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage[centerlast, small]{caption}
+\usepackage[colorlinks=true, citecolor=blue, linkcolor=blue, urlcolor=blue, breaklinks=true]{hyperref}
+
+
+\huge {\title{\textbf{Ley 1419, 13 de Diciembre 2010}}}
+\author{David Ricardo Martínez Hernández \textbf{Código: 261931}}
+\date{}
+\begin{document}
+\maketitle
+\noindent
+La ley 1419 del 13 de Diciembre de 2010 tiene como objetivo el desarrollo de la Telesalud en Colombia, como un apoyo al Sistema General de Seguridad Social en Salud. Para ello es necesario hacer algunas definiciones que van relacionas con la Telesaul en Colombia\footnote{Definiciones Tomadas de \cite{page1}, Página $1$.}:
+
+\textit{ \begin{itemize}
+ \item ``\textbf{Telesalud}: Es el conjunto de actividades relacionas con la salud, servicios y métodos, los cuales se llevan a cabo a distancia con la ayuda de las tecnologías de la información y telecomunicaciones. Incluye, entre otras, la Telemedicina y la Teleeducación.
+ \item \textbf{Telemedicina}: Es la provisión de servicios de salud a distancia en los componentes de promoción, prevención, diagnóstico, tratamiento y rehabilitación, por profesionales de la salud que utilizan tecnologías de la información y la comunicación, que les permite intercambiar datos con el propósito de facilitar el acceso y la oportunidad en la prestación de servicios a la población que presenta limitaciones de oferta, de acceso a los servicios o de ambos en su área geográfica.
+ \item \textbf{Teleeducación en salud}: Es la utilización de las tecnologías de la información y la telecomunicación para la práctica educativa de salud a distancia.''
+\end{itemize}}
+\noindent
+La Telesalud tiene como principios generales la eficiencia, universalidad, solidaridad, integralidad, unidad y participación, los cuales se definen\footnote{Definiciones tomadas de \cite{page2}, Página $5$.}:
+
+\textit{ \begin{itemize}
+ \item ``\textit{Eficiencia}: Es la mejor utilización social y económica de los recursos administrativos, técnicos y financieros disponibles para que los beneficios a que da derecho la seguridad social sean prestados en forma adecuada, oportuna y suficiente.
+ \item \textit{Universalidad}: Es la garantía de la protección para todas las personas, sin ninguna discriminación, en todas las etapas de la vida;
+ \item \textit{Solidaridad}: Es la práctica de la mutua ayuda entre las personas, las generaciones, los sectores económicos, las regiones y las comunidades bajo el principio del más fuerte hacia el más débil. Es deber del Estado garantizar la solidaridad en el régimen de Seguridad Social mediante su participación, control y dirección del mismo. Los recursos provenientes del erario público en el Sistema de Seguridad se aplicarán siempre a los grupos de población más vulnerables.
+ \item \textit{Integralidad}: Es la cobertura de todas las contingencias que afectan la salud, la capacidad económica y en general las condiciones de vida de toda la población. Para este efecto cada quien contribuirá según su capacidad y recibirá lo necesario para atender sus contingencias amparadas por esta Ley.
+ \item \textit{Unidad}: Es la articulación de políticas, instituciones, regímenes, procedimientos y prestaciones para alcanzar los fines de la seguridad social.
+ \item \textit{Participación}: Es la intervención de la comunidad a través de los beneficiarios de la seguridad social en la organización, control, gestión y fiscalización de las instituciones y del sistema en su conjunto.''
+\end{itemize}}
+\noindent
+Para poder cumplir los principios generales de la Telesalud enunciados y definidos anteriormente es necesario crear un Comité Asesor de la Telesalud como un organismo asesor del Ministerio de la Protección Social para el desarrollo de los programas de Telesalud. Este comité estará conformado por delegados de los Ministerios de la Protección Social, de Comunicaciones, de Educación Nacional, de Hacienda y Crédito Público, de Vivienda, de Territorial y Medio Ambiente, además contará con invitados de asociaciones científicas, universidades y centros de investigación.\\
+Sus funciones son\footnote{Definiciones tomadas de \cite{page1}, Páginas $2$ y $3$.}:
+\textit{\begin{itemize}
+ \item ``Brindar asesoría a los Ministerios de la Protección Social, Educación, Comunicaciones y Vivienda, Desarrollo Territorial y Medio Ambiente para el desarrollo de la Telesalud en Colombia, como una política de Estado, con fines sociales y Orientada a mejorar el acceso y oportunidad de los habitantes del territorio nacional, a los servicios de salud, así como la educación en salud, la gestión del conocimiento en salud y la investigación en salud.
+ \item Asesorar al Ministerios de Comunicaciones en cuanto a las necesidades de conectividad que hagan viable el desarrollo de la Telesalud en el país, en todos sus componentes.
+ \item Brindar apoyo y acompañamiento a los diferentes programas en sus etapas de generación, diseño, cumplimiento, calidad y metas propuestas, en cuanto a Telesalud se refiere.
+ \item Recomendar las prioridades de inversión de los recursos para el desarrollo e investigación de la Telesalud en Colombia.
+ \item Promover la educación en el uso de las Tecnologías de la Información y Comunicación aplicadas a la salud
+ \item Las demás que sean necesarias para garantizar el desarrollo de la Telesalud en Colombia, acorde con los recursos y necesidades del país.''
+\end{itemize}}
+\noindent
+Dado que el presupuesto asignado no puede ser superior sl $5\%$ del presupuesto de inversión del Fondo de Comunicaciones, que es la unidad Administrativa Especial adscrita al Ministerio de Comunicaciones.\\
+Actualmente algunas entidades de salud comprendidas como E.P.S e I.P.S no están promoviendo ni utilizando la Telesalud, es muy poca la acogida que le han echo los habitantes del país. Puede que no se este promoviendo por la falta de conocimientos del mismo y el gran alcance que puede llegar, no se han hecho las campañas necesarias para poder utilizar adecuadamente este servicio.\\
+Es necesario informar a los usuarios, especialmente a la medicina pre-pagada, para descongestionar las clínicas para medicina general, dado que son las más utilizadas y por ello las más congestionadas, y también Urgencias, muchos de los casos que se encuentran en Urgencias son casos muy sencillos y pueden ser tomados a distancias, claro esta si no son muy graves y si necesitan atención secundaria.\\\\
+En el futuro es necesario hacer una mayor inversión económica para poder hacer avances más significativos, y de 
+
+
+
+\begin{thebibliography}{99}
+
+\bibitem{page1} \url{http://wsp.presidencia.gov.co/Normativa/Leyes/Documents/ley141913122010.pdf}
+
+\bibitem{page2} \url{http://www.bcn.cl/carpeta_temas/temas_portada.2005-10-27.1690064663/pdf/LEY%20100%20DE%201993-%20Colombia.pdf}
+
+\bibitem{page3} \url{http://www.secretariasenado.gov.co/senado/basedoc/ley/2010/ley_1419_2010.html}
+
+\bibitem{page4} \url{http://www.telemedicina.unal.edu.co/IPSDoc/Res1448.pdf}
+
+\bibitem{page5} \url{http://www.telemedicina.unal.edu.co/IPSDoc/Res1448Anexo1.pdf}
+
+\bibitem{page6} \url{http://www.telemedicina.unal.edu.co/IPSDoc/Res1448Anexo2.pdf}
+\end{thebibliography}
+\end{document}
